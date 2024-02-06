@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AmazonWeb.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace AmazonWeb.Data
 {
@@ -6,7 +7,8 @@ namespace AmazonWeb.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-            
+
         }
+        public DbSet<Category> Categories { get; set; }
     }
 }
