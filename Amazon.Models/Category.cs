@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace AmazonWeb.Models
+namespace Amazon.Models
 {
     public class Category
     {

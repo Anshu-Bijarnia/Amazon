@@ -1,4 +1,4 @@
-namespace AmazonWeb.Models
+namespace Amazon.Models
 {
     public class ErrorViewModel
     {

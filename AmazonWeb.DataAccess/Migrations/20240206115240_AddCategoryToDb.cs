@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace AmazonWeb.Migrations
+namespace Amazon.DataAccess.Migrations
 {
     /// <inheritdoc />
     public partial class AddCategoryToDb : Migration

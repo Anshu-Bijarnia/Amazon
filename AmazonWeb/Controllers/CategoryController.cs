@@ -1,5 +1,5 @@
-﻿using AmazonWeb.Data;
-using AmazonWeb.Models;
+﻿using Amazon.DataAccess.Data;
+using Amazon.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AmazonWeb.Controllers
