@@ -1,10 +1,10 @@
-﻿using Amazon.DataAccess.Data;
-using Amazon.DataAccess.Repository.IRepository;
+﻿using Amazon.DataAccess.Repository.IRepository;
 using Amazon.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AmazonWeb.Controllers
+namespace AmazonWeb.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -39,7 +39,7 @@ namespace AmazonWeb.Controllers
             {
                 return NotFound();
             }
-            Category? categoryFromDb =  _unitOfWork.Category.Get(u => u.Id == id);
+            Category? categoryFromDb = _unitOfWork.Category.Get(u => u.Id == id);
             if (categoryFromDb == null)
             {
                 return NotFound();
