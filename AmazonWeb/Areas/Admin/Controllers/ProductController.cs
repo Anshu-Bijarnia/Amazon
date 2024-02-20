@@ -1,16 +1,13 @@
 ﻿using Amazon.DataAccess.Repository.IRepository;
 using Amazon.Models;
 using Amazon.Models.ViewModels;
-using Amazon.Utility;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Transactions;
 
 namespace AmazonWeb.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = SD.Role_Admin)]
+    //[Authorize(Roles = SD.Role_Admin)]
     public class ProductController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -98,7 +95,7 @@ namespace AmazonWeb.Areas.Admin.Controllers
                 return View(productVM);
             }
         }
-        
+
         #region API CALLS
         [HttpGet]
         public IActionResult GetAll()

@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace Amazon.Models
 {
@@ -23,8 +17,8 @@ namespace Amazon.Models
         public string Author { get; set; }
         [Required]
         [Display(Name = "List Price")]
-        [Range(1,1000)]
-        public double ListPrice {  get; set; }
+        [Range(1, 1000)]
+        public double ListPrice { get; set; }
         [Required]
         [Display(Name = "Price for 1-50")]
         [Range(1, 1000)]
@@ -42,6 +36,6 @@ namespace Amazon.Models
         [ValidateNever]
         public Category Category { get; set; }
         [ValidateNever]
-        public string ImageUrl { get; set; }    
+        public string ImageUrl { get; set; }
     }
 }

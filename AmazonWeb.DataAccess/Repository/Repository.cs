@@ -40,7 +40,7 @@ namespace Amazon.DataAccess.Repository
             IQueryable<T> query = dbSet;
             if (!string.IsNullOrEmpty(includeProperties))
             {
-                foreach(var includeProp in includeProperties
+                foreach (var includeProp in includeProperties
                     .Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                 {
                     query = query.Include(includeProp);

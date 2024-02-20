@@ -1,10 +1,10 @@
 using Amazon.DataAccess.Data;
 using Amazon.DataAccess.Repository;
 using Amazon.DataAccess.Repository.IRepository;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity;
 using Amazon.Utility;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
