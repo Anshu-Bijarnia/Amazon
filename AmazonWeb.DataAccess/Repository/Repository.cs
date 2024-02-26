@@ -2,7 +2,6 @@
 using Amazon.DataAccess.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace Amazon.DataAccess.Repository
 {

@@ -38,7 +38,7 @@ namespace Amazon.DataAccess.Repository
                 {
                     orderFromDb.SessionId = sessionId;
                 }
-                if(!string.IsNullOrEmpty(paymentIntentId))
+                if (!string.IsNullOrEmpty(paymentIntentId))
                 {
                     orderFromDb.PaymentIntentId = paymentIntentId;
                     orderFromDb.PaymentDate = DateTime.Now;

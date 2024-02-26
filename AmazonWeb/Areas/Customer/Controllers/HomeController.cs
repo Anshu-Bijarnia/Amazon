@@ -47,7 +47,8 @@ namespace AmazonWeb.Areas.Customer.Controllers
                 //Shopping cart exist
                 cartFromDb.Count += cart.Count;
                 _unitOfWork.ShoppingCart.Update(cartFromDb);
-            }else
+            }
+            else
             {
                 // Add new entry
                 _unitOfWork.ShoppingCart.Add(cart);
