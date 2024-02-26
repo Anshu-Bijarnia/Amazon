@@ -170,6 +170,7 @@ namespace AmazonWeb.Areas.Identity.Pages.Account
                 user.PhoneNumber = Input.PhoneNumber;
                 user.City = Input.City;
                 user.State = Input.State;
+                user.PostalCode = Input.PostalCode;
                 user.PhoneNumber = Input.PhoneNumber;
 
                 if (Input.Role == SD.Role_Company)
