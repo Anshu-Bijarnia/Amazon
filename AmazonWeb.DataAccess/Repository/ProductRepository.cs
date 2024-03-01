@@ -25,10 +25,7 @@ namespace Amazon.DataAccess.Repository
                 objFromDb.CategoryId = obj.CategoryId;
                 objFromDb.Category = obj.Category;
                 objFromDb.Author = obj.Author;
-                if (obj.ImageUrl != null)
-                {
-                    objFromDb.ImageUrl = obj.ImageUrl;
-                }
+                objFromDb.ProductImages = obj.ProductImages;
             }
         }
     }

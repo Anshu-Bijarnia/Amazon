@@ -1,7 +1,6 @@
 ﻿using Amazon.DataAccess.Data;
 using Amazon.DataAccess.Repository.IRepository;
 using Amazon.Models;
-using Amazon.Utility;
 
 namespace Amazon.DataAccess.Repository
 {
@@ -11,6 +10,11 @@ namespace Amazon.DataAccess.Repository
         public ApplicationUserRepository(ApplicationDbContext db) : base(db)
         {
             _db = db;
+        }
+
+        public void Update(ApplicationUser applicationUser)
+        {
+            _db.ApplicationUsers.Update(applicationUser);
         }
     }
 }

@@ -23,7 +23,8 @@ namespace AmazonWeb.ViewComponents
                     HttpContext.Session.SetInt32(SD.SessionCart, _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == claim.Value).Count());
                 }
                 return View(HttpContext.Session.GetInt32(SD.SessionCart));
-            }else
+            }
+            else
             {
                 HttpContext.Session.Clear();
                 return View(0);
