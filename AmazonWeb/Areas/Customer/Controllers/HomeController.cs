@@ -34,6 +34,11 @@ namespace AmazonWeb.Areas.Customer.Controllers
             };
             return View(shoppingCart);
         }
+        public IActionResult Modal()
+        {
+            return View();
+        }
+
         [HttpPost]
         [Authorize]
         public IActionResult Details(ShoppingCart cart)

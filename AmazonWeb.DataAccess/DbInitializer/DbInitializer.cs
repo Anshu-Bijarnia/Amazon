@@ -51,10 +51,55 @@ namespace Amazon.DataAccess.DbInitializer
                     State = "Delhi",
                     PostalCode = "110011",
                     City = "New Delhi"
-                }, "Admin123*").GetAwaiter().GetResult();
+                }, "Admin@101").GetAwaiter().GetResult();
 
-                ApplicationUser user = _db.ApplicationUsers.FirstOrDefault(u => u.Email == "admin@gmail.com");
-                _userManager.AddToRoleAsync(user, SD.Role_Admin).GetAwaiter().GetResult();
+                _userManager.CreateAsync(new ApplicationUser
+                {
+                    UserName = "customer@gmail.com",
+                    Email = "customer@gmail.com",
+                    Name = "Atul Bijarnia",
+                    PhoneNumber = "+911234567890",
+                    StreetAddress = "1 test",
+                    State = "Delhi",
+                    PostalCode = "110011",
+                    City = "New Delhi"
+                }, "Admin@101").GetAwaiter().GetResult();
+
+                _userManager.CreateAsync(new ApplicationUser
+                {
+                    UserName = "company@gmail.com",
+                    Email = "company@gmail.com",
+                    Name = "Dtu coders",
+                    PhoneNumber = "+911234567890",
+                    StreetAddress = "1 test",
+                    State = "Delhi",
+                    PostalCode = "110011",
+                    City = "New Delhi"
+                }, "Admin@101").GetAwaiter().GetResult();
+
+                _userManager.CreateAsync(new ApplicationUser
+                {
+                    UserName = "employee@gmail.com",
+                    Email = "employee@gmail.com",
+                    Name = "Nitesh Bijarnia",
+                    PhoneNumber = "+911234567890",
+                    StreetAddress = "1 test",
+                    State = "Delhi",
+                    PostalCode = "110011",
+                    City = "New Delhi"
+                }, "Admin@101").GetAwaiter().GetResult();
+
+                ApplicationUser admin = _db.ApplicationUsers.FirstOrDefault(u => u.Email == "admin@gmail.com");
+                _userManager.AddToRoleAsync(admin, SD.Role_Admin).GetAwaiter().GetResult();
+
+                ApplicationUser customer = _db.ApplicationUsers.FirstOrDefault(u => u.Email == "customer@gmail.com");
+                _userManager.AddToRoleAsync(customer, SD.Role_Customer).GetAwaiter().GetResult();
+
+                ApplicationUser company = _db.ApplicationUsers.FirstOrDefault(u => u.Email == "company@gmail.com");
+                _userManager.AddToRoleAsync(company, SD.Role_Company).GetAwaiter().GetResult();
+
+                ApplicationUser employee = _db.ApplicationUsers.FirstOrDefault(u => u.Email == "employee@gmail.com");
+                _userManager.AddToRoleAsync(employee, SD.Role_Employee).GetAwaiter().GetResult();
             }
         }
     }

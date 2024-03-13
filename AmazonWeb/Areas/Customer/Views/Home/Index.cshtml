@@ -6,10 +6,11 @@
             <div class="row p-2">
                 <div class="col-12 p-1">
                     <div class="card border-0 p-3 shadow border-top border-5 rounded">
-                        @if(product.ProductImages != null && product.ProductImages.Count() > 0)
+                        @if (product.ProductImages != null && product.ProductImages.Count() > 0)
                         {
                             <img src="@product.ProductImages.FirstOrDefault().ImageUrl" class="card-img-top rounded" />
-                        }else
+                        }
+                        else
                         {
                             <img src="https://placehold.co/500x600/png" class="card-img-top rounded" />
                         }
@@ -45,4 +46,56 @@
             </div>
         </div>
     }
+</div>
+<div class="floating-button">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <i class="bi bi-info-square"></i>
+    </button>
+</div>
+<!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Website Instructions</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <h4><span style="color: #008080;">Website Overview:</span></h4>
+                <ul>
+                    <li>
+                        Following are the User Account that exists by default <i style="color:dodgerblue">(Password: Admin@101)</i>:
+                        <ul>
+                            <li>Admin User&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<i style="color:dodgerblue">admin@gmail.com</i></li>
+                            <li>Individual User&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<i style="color:dodgerblue">customer@gmail.com</i></li>
+                            <li>Authorized Company User&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<i style="color:dodgerblue">company@gmail.com</i></li>
+                            <li>Authorized Employee User&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<i style="color:dodgerblue">employee@gmail.com</i></li>
+                        </ul>
+                    </li>
+                    <li>You can create new accounts as you wish! If you prefer to create any accounts please login using the Admin/Manager User and navigate to Users inside Content Management.&nbsp;</li>
+                </ul>
+                <h4 style="color: #2e6c80;">How to use the demo website:</h4>
+                <ul>
+                    <li>This website is inteded to server as demo application.</li>
+                    <li>User can place order after adding items to cart.</li>
+                    <li>Once order is placed you can login as Manager/Admin User and Manage orders and see the flow of application.</li>
+                    <li>
+                        In order to place order you can use any test credit card number supported by stripe.
+                        <ul>
+                            <li>
+                                A default example is 4000 0035 6000 0008, valid date , any 3 digit CVV.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Admin user can register new employees/admins for the website.</li>
+                </ul>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+            </div>
+        </div>
+    </div>
 </div>
