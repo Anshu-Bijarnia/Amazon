@@ -47,19 +47,25 @@ namespace Amazon.DataAccess.Migrations
                         {
                             Id = 1,
                             DisplayOrder = 1,
-                            Name = "Action"
+                            Name = "Healthy Living & Wellness"
                         },
                         new
                         {
                             Id = 2,
                             DisplayOrder = 2,
-                            Name = "Science Fiction"
+                            Name = "Meditation"
                         },
                         new
                         {
                             Id = 3,
                             DisplayOrder = 3,
-                            Name = "History"
+                            Name = "UPSC"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            DisplayOrder = 4,
+                            Name = "Manga"
                         });
                 });
 
@@ -98,32 +104,32 @@ namespace Amazon.DataAccess.Migrations
                         new
                         {
                             Id = 1,
-                            City = "Tech City",
-                            Name = "Tech Solution",
+                            City = "New Delhi",
+                            Name = "Aurelius",
                             PhoneNumber = "26387483",
-                            PostalCode = "12121",
-                            State = "IL",
-                            StreetAddress = "123 Tech St"
+                            PostalCode = "110001",
+                            State = "Delhi",
+                            StreetAddress = "Regal building 69, Connaught Place"
                         },
                         new
                         {
                             Id = 2,
                             City = "Vid City",
-                            Name = "Vivid Books",
+                            Name = "Booknerds",
                             PhoneNumber = "4387568",
                             PostalCode = "56434",
                             State = "IL",
-                            StreetAddress = "999 Vid St"
+                            StreetAddress = "123"
                         },
                         new
                         {
                             Id = 3,
                             City = "Lala land",
-                            Name = "Readers Club",
+                            Name = "Creative Circle",
                             PhoneNumber = "23487623",
                             PostalCode = "34543",
                             State = "NY",
-                            StreetAddress = "999 Main St"
+                            StreetAddress = "123"
                         });
                 });
 
@@ -281,80 +287,93 @@ namespace Amazon.DataAccess.Migrations
                         new
                         {
                             Id = 1,
-                            Author = "Billy Spark",
+                            Author = "James Clear",
                             CategoryId = 1,
-                            Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
+                            Description = "THE PHENOMENAL INTERNATIONAL BESTSELLER: OVER 1O MILLION COPIES SOLD WORLDWIDE\r\n\r\nTransform your life with tiny changes in behaviour, starting now.\r\n\r\nPeople think that when you want to change your life, you need to think big. But world-renowned habits expert James Clear has discovered another way. He knows that real change comes from the compound effect of hundreds of small decisions: doing two push-ups a day, waking up five minutes early, or holding a single short phone cal",
                             ISBN = "SWD9999001",
-                            ListPrice = 99.0,
-                            Price = 90.0,
-                            Price100 = 80.0,
-                            Price50 = 85.0,
-                            Title = "Fortune of Time"
+                            ListPrice = 799.0,
+                            Price = 508.0,
+                            Price100 = 450.0,
+                            Price50 = 475.0,
+                            Title = "Atomic Habits"
                         },
                         new
                         {
                             Id = 2,
-                            Author = "Nancy Hoover",
+                            Author = "Gaur Gopal Das",
                             CategoryId = 1,
-                            Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
+                            Description = "Stop going through life,\r\nStart growing through life!\r\n\r\nWhile navigating their way through Mumbai's horrendous traffic, Gaur Gopal Das and his wealthy young friend Harry get talking, delving into concepts ranging from the human condition to finding one's purpose in life and the key to lasting happiness.",
                             ISBN = "CAW777777701",
-                            ListPrice = 40.0,
-                            Price = 30.0,
-                            Price100 = 20.0,
-                            Price50 = 25.0,
-                            Title = "Dark Skies"
+                            ListPrice = 250.0,
+                            Price = 237.0,
+                            Price100 = 210.0,
+                            Price50 = 220.0,
+                            Title = "Lifes Amazing Secrets"
                         },
                         new
                         {
                             Id = 3,
-                            Author = "Julian Button",
-                            CategoryId = 1,
-                            Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
+                            Author = "Francesc Miralles",
+                            CategoryId = 2,
+                            Description = "THE INTERNATIONAL BESTSELLER\r\n\r\nWe all have an ikigai.\r\n\r\nIt's the Japanese word for ‘a reason to live’ or ‘a reason to jump out of bed in the morning’.\r\n\r\nIt’s the place where your needs, desires, ambitions, and satisfaction meet. A place of balance. Small wonder that finding your ikigai is closely linked to living longer.",
                             ISBN = "RITO5555501",
-                            ListPrice = 55.0,
-                            Price = 50.0,
-                            Price100 = 35.0,
-                            Price50 = 40.0,
-                            Title = "Vanish in the Sunset"
+                            ListPrice = 359.0,
+                            Price = 319.0,
+                            Price100 = 295.0,
+                            Price50 = 305.0,
+                            Title = "Ikigai"
                         },
                         new
                         {
                             Id = 4,
-                            Author = "Abby Muscles",
+                            Author = "Darius Foroux",
                             CategoryId = 2,
-                            Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
+                            Description = "Why is it so hard to live well amidst the chaos and noise? While you might think this is a problem of the modern world, it's a timeless issue.\r\n2000 years ago, the ancient Stoics talked about the exact same challenges we're facing today, like:\r\n• How can we find inner peace?\r\n• What does it take to be happy?\r\n• Can we become more resilient?\r\nThe answers can be found in the philosophy of Stoicism. ",
                             ISBN = "WS3333333301",
-                            ListPrice = 70.0,
-                            Price = 65.0,
-                            Price100 = 55.0,
-                            Price50 = 60.0,
-                            Title = "Cotton Candy"
+                            ListPrice = 299.0,
+                            Price = 168.0,
+                            Price100 = 145.0,
+                            Price50 = 155.0,
+                            Title = "Focus on What Matters"
                         },
                         new
                         {
                             Id = 5,
-                            Author = "Ron Parker",
-                            CategoryId = 2,
-                            Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
+                            Author = "M Laxmikanth",
+                            CategoryId = 3,
+                            Description = "McGraw Hill presents the seventh edition of the consistent best seller and the most celebrated title on the subject – Indian Polity by M Laxmikanth. The book is a must-read for the aspirants appearing for the UPSC – Civil Services Examination as well as the other State Services examinations.",
                             ISBN = "SOTJ1111111101",
-                            ListPrice = 30.0,
-                            Price = 27.0,
-                            Price100 = 20.0,
-                            Price50 = 25.0,
-                            Title = "Rock in the Ocean"
+                            ListPrice = 1045.0,
+                            Price = 700.0,
+                            Price100 = 650.0,
+                            Price50 = 675.0,
+                            Title = "Indian Polity"
                         },
                         new
                         {
                             Id = 6,
-                            Author = "Laura Phantom",
-                            CategoryId = 3,
-                            Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
+                            Author = "Gege Akutami",
+                            CategoryId = 4,
+                            Description = "Yuji Itadori is resolved to save the world from cursed spirits, but he soon learns that the best way to do it is to slowly lose his humanity and become one himself!In a world where cursed spirits feed on unsuspecting humans, fragments of the legendary and feared demon Ryomen Sukuna were lost and scattered about. Should any demon consume Sukuna’s body parts, the power they gain could destroy the world as we know it. ",
                             ISBN = "FOT000000001",
-                            ListPrice = 25.0,
-                            Price = 23.0,
-                            Price100 = 20.0,
-                            Price50 = 22.0,
-                            Title = "Leaves and Wonders"
+                            ListPrice = 830.0,
+                            Price = 467.0,
+                            Price100 = 435.0,
+                            Price50 = 450.0,
+                            Title = "Jujutsu Kaisen Vol 1"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Author = "ONE",
+                            CategoryId = 4,
+                            Description = "Life gets pretty boring when you can beat the snot out of any villain with just one punch.",
+                            ISBN = "FOT000000001",
+                            ListPrice = 962.0,
+                            Price = 489.0,
+                            Price100 = 450.0,
+                            Price50 = 475.0,
+                            Title = "One-Punch Man Vol 1"
                         });
                 });
 
